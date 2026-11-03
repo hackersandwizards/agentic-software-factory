@@ -69,5 +69,5 @@ tests/
   evaluator.test.ts
 package.json      scripts, deps (Vitest), ESM
 tsconfig.json     TypeScript config (strict mode)
-.beans/           one .md per workshop bean (see CLAUDE.md)
+.beans/           one .md per Bean (see CLAUDE.md)
 ```

@@ -30,7 +30,7 @@ multiplication and division. No new grammar layer is needed.
 
 ### Files to change
 - src/lexer.ts:3 - add a PERCENT token type
-- src/parser.ts:85 - allow PERCENT in the term level
+- src/parser.ts:74 - allow PERCENT in the term level
 - src/evaluator.ts:1 - evaluate PERCENT as remainder
 - tests/evaluator.test.ts:1 - `7 % 3` -> 1
 

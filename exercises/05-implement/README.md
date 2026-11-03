@@ -72,5 +72,5 @@ npm test
 beans show sandbox-exercise-olqc
 ```
 
-Try the guards too: run `/implement` again on the completed Bean, and once with an uncommitted
-change. Both must stop before creating a branch.
+Try the guards too: run `/implement sandbox-exercise-olqc` once more. It must stop before creating
+a branch, and its message must say why.

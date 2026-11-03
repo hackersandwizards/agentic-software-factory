@@ -34,7 +34,8 @@ factory failure modes:
 - a refine eval: every path under "Files to change" actually exists, so no hallucinated files
   (loop the paths and test each with `[ -e "$p" ]`, run from the sandbox)
 
-Run it on both beans again. A useful eval PASSES the good bean and FAILS the broken one. If it
+Run it on both beans again. Commit `eval-kit/` once your checks work: `/implement` in 08 refuses a
+dirty tree. A useful eval PASSES the good bean and FAILS the broken one. If it
 passes both, it is not catching anything: sharpen it.
 
 ## Part 2: a judge, for what a line of bash cannot see

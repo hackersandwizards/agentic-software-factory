@@ -17,8 +17,8 @@ implement cycle short and the gate reliable.
 
 Projects you can watch (ASCII output):
 
-- Conway's Game of Life, a grid that animates. Suggested default; a scaffold
-  prompt is in README.md.
+- Conway's Game of Life, a grid that animates. Suggested default; the scaffold
+  prompt in README.md sets it up when you name it as the project.
 - Tic-tac-toe with a simple AI opponent. The board is the screen; the win check
   and the move choice are pure.
 - An ASCII bar chart or sparkline renderer. render(data) returns a string, so

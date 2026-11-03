@@ -10,7 +10,8 @@ Turn one failure into a permanent guard, and write the lesson down.
 
 ## Red-team
 
-Use [red-team-inputs.md](red-team-inputs.md). Feed the factory bad input and watch each station.
+Use [red-team-inputs.md](red-team-inputs.md). Commit your work first: `/implement` refuses a dirty
+tree, and only input 4 is meant to test that. Feed the factory bad input and watch each station.
 Find one escape: a station that continues instead of aborting, or bad output that slips past your
 07 check.
 
@@ -34,8 +35,8 @@ offline across many Beans, which is what the grown-up version does.)
 
 ## Codify
 
-Add one line to the factory's `CLAUDE.md` or conventions so the lesson persists. Fill in the
-"how we'll know it worked" card: name the check and the signal you will watch.
+Add one line to the factory's `CLAUDE.md` or conventions so the lesson persists: name the check
+and the signal you will watch to know it worked.
 
 ## Verify
 

@@ -10,7 +10,7 @@ failure you found once cannot recur.
 1. Copy the eval kit into your project:
 
    ```bash
-   cp -R <path-to>/take-home/instrument/eval-kit .
+   cp -R <path-to>/take-home/instrument/eval-kit <path-to>/take-home/instrument/guards .
    ```
 
 2. Run it on a good Bean and a bad one. Use your own: a Bean from a clean slot-2
@@ -41,7 +41,8 @@ Pick the escape you found when you red-teamed your factory. Wire a deterministic
 check into the implement station so it runs on every implement, not by hand.
 
 The shipped example guards the most common escape: a Bean reaching code with no
-Refined Plan. Add this to the top of implement's Phase 1 preflight:
+Refined Plan. You copied it into `guards/` with the eval kit. Add this to the
+top of your implement skill's preflight:
 
 ```
 Run the factory's guards before touching anything:

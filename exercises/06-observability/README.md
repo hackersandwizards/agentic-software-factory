@@ -12,7 +12,7 @@ compare what is left behind.
 ## Before you start
 
 You need a working `/planner`, `/refine` and `/implement` in `sandbox/.claude/skills/`, your own
-from 03 to 05. If yours are not ready, ask your trainer for a working set.
+from 03 to 05. If yours are not ready, your trainer has a working set to copy in.
 
 ## First, without the hook
 
@@ -44,15 +44,17 @@ everything else in the file:
 ]
 ```
 
-Restart your Claude session so the hook loads (exit, then run `claude` again: settings are read
+Commit the hook (`git add .claude && git commit -m "trace hook"`), since `/implement` refuses a
+dirty tree. Restart your Claude session so the hook loads (exit, then run `claude` again: settings are read
 at startup). Run a station again, then look:
 
 ```bash
 cat runs/trace.jsonl
 ```
 
-Each run now leaves a line: timestamp, branch, files changed, commit count. `runs/` is in
-`.gitignore`, so the trace never dirties the tree `/implement` checks.
+Every turn now leaves a line, since the `Stop` hook fires at the end of each reply: timestamp,
+branch, files changed, commit count. `runs/` is in `.gitignore`, so the trace never dirties the
+tree `/implement` checks.
 
 ## Compare
 
