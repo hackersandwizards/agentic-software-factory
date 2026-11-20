@@ -54,20 +54,3 @@ Integers only. Left-associative `+ -` and `* /`. Whitespace ignored.
 
 The Beans in `.beans/` extend this grammar: parentheses (`sandbox-exercise-olqc`)
 and decimal numbers with a comma (`sandbox-vzwt`).
-
-## Layout
-
-```
-src/
-  lexer.ts        tokenization: NUMBER, PLUS, MINUS, STAR, SLASH, END
-  parser.ts       recursive-descent parser, AST nodes (Number, BinaryOp)
-  evaluator.ts    walks AST, returns number
-  main.ts         REPL
-tests/
-  lexer.test.ts
-  parser.test.ts
-  evaluator.test.ts
-package.json      scripts, deps (Vitest), ESM
-tsconfig.json     TypeScript config (strict mode)
-.beans/           one .md per Bean (see CLAUDE.md)
-```
