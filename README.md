@@ -51,7 +51,7 @@ You need:
 - Claude Code
 - the `beans` CLI
 - `jq`
-- Node.js 22.12+ on the 22.x line, 24.x, or 26 and later, with npm
+- Node.js 26 or newer, with npm
 - `git`
 
 ```bash
